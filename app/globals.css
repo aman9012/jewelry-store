@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ivory text-charcoal font-body;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display text-ink;
+}
+
+/* Signature element: a fine corner-bracket frame around product imagery,
+   like a jeweler's display case, that tightens on hover. */
+.jewel-frame {
+  position: relative;
+}
+
+.jewel-frame::before,
+.jewel-frame::after,
+.jewel-frame .corner-tl,
+.jewel-frame .corner-br {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: theme("colors.rosewood");
+  transition: all 0.25s ease;
+  opacity: 0.85;
+}
+
+.jewel-frame::before {
+  top: 8px;
+  left: 8px;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
+}
+
+.jewel-frame::after {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
+}
+
+.jewel-frame:hover::before {
+  top: 4px;
+  left: 4px;
+}
+
+.jewel-frame:hover::after {
+  bottom: 4px;
+  right: 4px;
+}

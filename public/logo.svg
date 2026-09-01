@@ -1,0 +1,21 @@
+<svg viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .word { font-family: Georgia, 'Times New Roman', serif; }
+    </style>
+  </defs>
+  <!-- Jewel frame oval around monogram -->
+  <ellipse cx="60" cy="55" r="0" />
+  <ellipse cx="60" cy="55" rx="42" ry="42" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <ellipse cx="60" cy="55" rx="35" ry="35" fill="none" stroke="#D4AF37" stroke-width="1"/>
+  <!-- small gem accents at N/S/E/W -->
+  <circle cx="60" cy="13" r="3" fill="#8B1E3F"/>
+  <circle cx="60" cy="97" r="3" fill="#8B1E3F"/>
+  <circle cx="18" cy="55" r="3" fill="#8B1E3F"/>
+  <circle cx="102" cy="55" r="3" fill="#8B1E3F"/>
+  <!-- Monogram -->
+  <text x="60" y="70" text-anchor="middle" class="word" font-size="44" fill="#3B0A14">B</text>
+  <!-- Wordmark -->
+  <text x="130" y="50" class="word" font-size="30" letter-spacing="1" fill="#3B0A14">Bhavna</text>
+  <text x="130" y="82" class="word" font-size="30" letter-spacing="4" fill="#8B1E3F">JEWEL</text>
+</svg>
